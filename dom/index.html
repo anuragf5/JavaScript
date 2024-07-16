@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+
+    <div class="container">
+
+        <div class="color_container">
+
+            <div class="red" id="red"></div>
+            <div class="yellow" id="yellow"></div>
+            <div class="green" id="green"></div>
+            <div class="blue" id="blue"></div>
+            <div class="black" id="black"></div>
+
+        </div>
+
+        <div class="text_container">
+
+            <p id="paragraph"> Hello World</p>
+
+        </div>
+
+        <div class="button_container">
+
+            <button type="upper" class="buttons" id="upper">Upper</button>
+            <button type="lower" class="buttons" id="lower">Lower</button>
+            <button type="increment" class="buttons" id="increment">+</button>
+            <button type="decrement" class="buttons" id="decrement">-</button>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        document.getElementById("red").onclick = function () {
+
+            document.getElementById("body").style.backgroundColor = "red";
+        }
+
+        document.getElementById("yellow").onclick = function () {
+
+            document.getElementById("body").style.backgroundColor = "yellow";
+        }
+
+        document.getElementById("green").onclick = function () {
+
+            document.getElementById("body").style.backgroundColor = "green";
+        }
+
+        document.getElementById("blue").onclick = function () {
+
+            document.getElementById("body").style.backgroundColor = "blue";
+        }
+
+        document.getElementById("black").onclick = function () {
+
+            document.getElementById("body").style.backgroundColor = "black";
+        }
+
+        document.getElementById("upper").onclick = function () {
+            document.getElementById("paragraph").style.textTransform = "uppercase";
+        }
+
+        document.getElementById("lower").onclick = function () {
+            document.getElementById("paragraph").style.textTransform = "lowercase";
+        }
+
+        let fontSize = 15;
+
+        document.getElementById("increment").onclick = function () {
+
+            fontSize++;
+
+            document.getElementById("paragraph").style.fontSize = fontSize + "px";
+        }
+
+        document.getElementById("decrement").onclick = function () {
+
+            fontSize--;
+
+            document.getElementById("paragraph").style.fontSize = fontSize + "px";
+        }
+
+    </script>
+
+</body>
+
+</html>
