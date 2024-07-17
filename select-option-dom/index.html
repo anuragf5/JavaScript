@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        select {
+            width: 100%;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-right: 24px;
+            font-size: 16px;
+            border: 2px solid #f2f2f2;
+        }
+
+        #h1 {
+            font-weight: 400;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: justify;
+        }
+
+        .h3 {
+            width: 50%;
+            margin-top: 48px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 24px;
+            font-weight: 400;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            margin-top: 48px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            padding: 24px;
+            border: 2px solid cadetblue;
+            border-radius: 6px;
+        }
+
+        button {
+            margin-top: 24px;
+            padding: 8px;
+            font-size: 12px;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3 class="h3">Choose your preffered language :</h3>
+
+    <div class="container">
+
+        <select name="" id="selection" onchange="getValue();">
+            <option value="none">Select language</option>
+            <option value="python">Python</option>
+            <option value="java_script">Java Script</option>
+            <option value="flutter">Flutter</option>
+        </select>
+
+        <h1 id="h1"></h1>
+
+        <button id="uppercase">Uppercase</button>
+        <button id="lowercase">Lowercase</button>
+
+    </div>
+
+
+    <script>
+
+        function getValue() {
+
+            var selectTag = document.getElementById("selection").value;
+
+            if (selectTag == "none") {
+
+                document.getElementById("h1").style.display = "none";
+                document.getElementById("h1").style
+            }
+            else if (selectTag == "python") {
+
+                document.getElementById("h1").style.display = "block";
+
+                document.getElementById("h1").innerText = "Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming.";
+
+                document.getElementById("uppercase").onclick = function () {
+                    document.getElementById("h1").style.textTransform = "uppercase";
+                }
+
+                document.getElementById("lowercase").onclick = function () {
+                    document.getElementById("h1").style.textTransform = "lowercase";
+                }
+            }
+            else if (selectTag == "java_script") {
+
+                document.getElementById("h1").style.display = "block";
+
+                document.getElementById("h1").innerText = "JavaScript, often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS. 99% of websites use JavaScript on the client side for webpage behavior. Web browsers have a dedicated JavaScript engine that executes the client code.";
+
+                document.getElementById("uppercase").onclick = function () {
+                    document.getElementById("h1").style.textTransform = "uppercase";
+                }
+
+                document.getElementById("lowercase").onclick = function () {
+                    document.getElementById("h1").style.textTransform = "lowercase";
+                }
+
+            }
+            else if (selectTag == "flutter") {
+
+                document.getElementById("h1").style.display = "block";
+
+                document.getElementById("h1").innerText = "Flutter is an open-source UI software development kit created by Google. It can be used to develop cross platform applications from a single codebase for the web, Fuchsia, Android, iOS, Linux, macOS, and Windows. First described in 2015, Flutter was released in May 2017";
+
+                document.getElementById("uppercase").onclick = function () {
+                    document.getElementById("h1").style.textTransform = "uppercase";
+                }
+
+                document.getElementById("lowercase").onclick = function () {
+                    document.getElementById("h1").style.textTransform = "lowercase";
+                }
+
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
