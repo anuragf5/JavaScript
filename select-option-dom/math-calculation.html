@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first {
+            padding: 8px;
+        }
+
+        .second {
+            padding: 8px;
+        }
+
+        .select {
+            padding: 8px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="text" id="first" placeholder="Enter first text">
+    <input type="text" id="second" placeholder="Enter second text">
+
+    <button id="add">Get Value</button>
+
+    <select name="" id="select">
+        <option value="">Select any one operation</option>
+        <option value="add">Add</option>
+        <option value="sub">Sub</option>
+        <option value="mul">Add</option>
+        <option value="div">Sub</option>
+    </select>
+
+    <script>
+
+        document.getElementById("add").onclick = function () {
+
+            let first = document.getElementById("first").value;
+            let second = document.getElementById("second").value;
+
+            console.log(parseInt(first) + parseInt(second));
+        }
+
+        document.getElementById("select").onclick = function () {
+
+            let selectTag = document.getElementById("select").value;
+
+            let first = document.getElementById("first").value;
+            let second = document.getElementById("second").value;
+
+            if (selectTag == "add") {
+
+                console.log(parseInt(first) + parseInt(second));
+            }
+            else if (selectTag == "sub") {
+                console.log(parseInt(first) - parseInt(second));
+            }
+            else if (selectTag == "mul") {
+                console.log(parseInt(first) * parseInt(second));
+            }
+            else if (selectTag == "div") {
+                console.log(parseInt(first) / parseInt(second));
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
