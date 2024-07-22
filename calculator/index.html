@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: auto;
+            width: 24%;
+            border: 1.5px solid black;
+            background-color: #f8f8f8;
+        }
+
+        .input {
+            font-size: 48px;
+            font-weight: bold;
+            text-align: right;
+            width: 100%;
+            padding: 24px;
+            border: none;
+            background-color: #f8f8f8;
+
+        }
+
+        .container_button {
+            margin-left: 2px;
+            margin-right: 2px;
+            width: 100%;
+        }
+
+        button {
+            font-size: 16px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 24%;
+            height: 72px;
+            border: none;
+            border-radius: 4px;
+            border: 2px solid #f2f2f2;
+            background-color: white;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            text-align: center;
+        }
+
+        .zero {
+            width: 49%;
+        }
+
+        .equal {
+            background-color: #357EC7;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <input type="text" name="" id="number" class="input">
+
+        <div class="container_button">
+
+            <div class="container_first">
+
+                <button>CE</button>
+                <button>C</button>
+                <button><i class="fa-solid fa-delete-left"></i></button>
+                <button><b>÷</b></button>
+
+            </div>
+
+            <div class="container_third">
+
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button><b>×</b></button>
+
+            </div>
+
+            <div class="container_fourth">
+
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button><b>−</b></button>
+
+            </div>
+
+            <div class="container_five">
+
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button><b>+</b></button>
+
+            </div>
+
+            <div class="container_six">
+
+                <button>0</button>
+                <button>.</button>
+                <button><b>=</b></button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        let buttons = document.querySelectorAll("button");
+        let input = document.querySelector("input");
+        
+        for (let i of buttons) {
+
+            i.onclick = function () {
+                
+                if (i.innerText == "=") {
+
+                    let inputValue = input.value;
+                    
+                    input.value = Math.floor(eval(inputValue));
+                    
+                }
+                else {
+
+                    input.value += i.innerText;
+                }
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
