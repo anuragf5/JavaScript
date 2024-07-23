@@ -39,6 +39,7 @@
             padding: 24px;
             border: 2px solid cadetblue;
             border-radius: 6px;
+            background-color: white;
         }
 
         button {
@@ -48,10 +49,38 @@
             border: none;
             border-radius: 4px;
         }
+
+        .color_container {
+            margin-top: 24px;
+            display: flex;
+        }
+
+        #red {
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border-radius: 100%;
+            margin-right: 16px;
+        }
+
+        #green {
+            height: 50px;
+            width: 50px;
+            background-color: green;
+            border-radius: 100%;
+            margin-right: 16px;
+        }
+
+        #blue {
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+            border-radius: 100%;
+        }
     </style>
 </head>
 
-<body>
+<body id="body">
 
     <h3 class="h3">Choose your preffered language :</h3>
 
@@ -63,6 +92,21 @@
             <option value="java_script">Java Script</option>
             <option value="flutter">Flutter</option>
         </select>
+
+        <Div class="color_container">
+            <div id="red">
+
+            </div>
+
+            <div id="green">
+
+            </div>
+
+            <div id="blue">
+
+            </div>
+
+        </Div>
 
         <h1 id="h1"></h1>
 
@@ -127,6 +171,21 @@
                 }
 
             }
+        }
+
+        document.getElementById("red").onclick = function () {
+
+            document.getElementById("body").style.backgroundColor = "red";
+        }
+
+        document.getElementById("green").onclick = function () {
+
+            document.getElementById("body").style.backgroundColor = "green";
+        }
+
+        document.getElementById("blue").onclick = function () {
+
+            document.getElementById("body").style.backgroundColor = "blue";
         }
 
     </script>
