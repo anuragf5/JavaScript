@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            padding: 48px;
+            text-align: center;
+        }
+
+        .top_container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #color {
+            padding: 12px;
+            font-size: 12px;
+            margin: 24px;
+        }
+
+        #div {
+            padding: 12px;
+            font-size: 12px;
+            margin: 24px;
+        }
+
+        button {
+            width: 80px;
+            padding: 12px;
+            font-size: 12px;
+            margin: 24px;
+        }
+
+        .bottom_container_one {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bottom_container_two {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            margin: 24px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="top_container">
+
+            <input type="text" id="color" placeholder="Enter color name">
+            <input type="number" id="div" placeholder="Enter box number">
+            <button id="apply">Apply</button>
+
+        </div>
+
+        <div class="bottom_container">
+
+            <div class="bottom_container_one">
+                <div class="box" id="one"></div>
+                <div class="box" id="two"></div>
+                <div class="box" id="three"></div>
+                <div class="box" id="four"></div>
+
+            </div>
+
+            <div class="bottom_container_two">
+                <div class="box" id="five"></div>
+                <div class="box" id="six"></div>
+                <div class="box" id="seven"></div>
+                <div class="box" id="eight"></div>
+            </div>
+
+        </div>
+
+        <script>
+            
+            document.getElementById("apply").onclick = function () {
+                
+                let colorValue = document.getElementById("color").value;
+                
+                let divValue = document.getElementById("div").value;
+
+                if (divValue == 1) {
+
+                    document.getElementById("color").value = '';
+
+                    document.getElementById("div").value = '';
+
+                    document.getElementById("color").focus();
+
+                    document.getElementById("one").style.background = colorValue;
+                }
+                else if (divValue == 2) {
+
+                    document.getElementById("color").value = '';
+
+                    document.getElementById("div").value = '';
+
+                    document.getElementById("color").focus();
+
+                    document.getElementById("two").style.background = colorValue;
+                }
+                else if (divValue == 3) {
+
+                    document.getElementById("color").value = '';
+
+                    document.getElementById("div").value = '';
+
+                    document.getElementById("color").focus();
+
+                    document.getElementById("three").style.background = colorValue;
+                }
+                else if (divValue == 4) {
+
+                    document.getElementById("color").value = '';
+
+                    document.getElementById("div").value = '';
+
+                    document.getElementById("color").focus();
+
+                    document.getElementById("four").style.background = colorValue;
+                }
+                else if (divValue == 5) {
+
+                    document.getElementById("color").value = '';
+
+                    document.getElementById("div").value = '';
+
+                    document.getElementById("color").focus();
+
+                    document.getElementById("five").style.background = colorValue;
+                }
+                else if (divValue == 6) {
+
+                    document.getElementById("color").value = '';
+
+                    document.getElementById("div").value = '';
+
+                    document.getElementById("color").focus();
+
+                    document.getElementById("six").style.background = colorValue;
+                }
+                else if (divValue == 7) {
+
+                    document.getElementById("color").value = '';
+
+                    document.getElementById("div").value = '';
+
+                    document.getElementById("color").focus();
+
+                    document.getElementById("seven").style.background = colorValue;
+                }
+                else if (divValue == 8) {
+
+                    document.getElementById("color").value = '';
+
+                    document.getElementById("div").value = '';
+
+                    document.getElementById("color").focus();
+
+                    document.getElementById("eight").style.background = colorValue;
+                }
+                else {
+                    
+                    alert("Sorry! you can select any one box in between eight");
+                }
+            }
+
+        </script>
+
+    </div>
+
+</body>
+
+</html>
