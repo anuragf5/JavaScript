@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="range" name="" id="range_selector" min="35" max="100" value="35">
+
+    <h1 id="h1"></h1>
+
+    <script>
+
+        let range = document.getElementById("range_selector");
+
+        let output = document.getElementById("h1");
+
+        output.innerText = range.value;
+
+        let fontSize;
+
+        range.onchange = function () {
+
+            output.innerText = this.value;
+
+            fontSize = this.value;
+
+            output.style.fontSize = fontSize + "px";
+        }
+
+    </script>
+</body>
+
+</html>
