@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="body">
+    <input type="color" id="color_selector">
+
+    <script>
+
+        
+        // document.getElementById("color_selector").oninput = function () {
+            
+        //     let color = document.getElementById("color_selector").value;
+
+        //     document.getElementById("body").style.backgroundColor = select_color;
+        // }
+        
+        
+        let color = document.getElementById("color_selector").value;
+
+        color.addEventListener("input", function () {
+            
+            let select_color = color;
+
+            document.getElementById("body").style.backgroundColor = select_color;
+        });
+
+    </script>
+</body>
+
+</html>
