@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            padding: 48px;
+            text-align: center;
+        }
+
+        input {
+            width: 400px;
+            padding: 16px;
+            font-size: 20px;
+            border: 1px solid teal;
+        }
+
+        button {
+            width: 120px;
+            padding: 16px;
+            border: none;
+            color: white;
+            background-color: teal;
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 34px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <input type="text" id="input">
+
+        <button id="push">Push</button>
+
+        <button id="pop">Pop</button>
+
+        <h1></h1>
+
+    </div>
+
+    <script>
+
+        let array = [];
+
+        document.getElementById("push").onclick = function () {
+
+            let value = document.getElementById("input").value;
+
+            document.getElementById("input").value = '';
+
+            document.getElementById("input").focus();
+
+            array.push(value);
+
+            document.querySelector("h1").innerText = array;
+        }
+
+        document.getElementById("pop").onclick = function () {
+
+            let value = document.getElementById("input").value;
+
+            document.getElementById("input").value = '';
+
+            document.getElementById("input").focus();
+
+            array.pop(value);
+
+            document.querySelector("h1").innerText = array;
+        }
+
+    </script>
+</body>
+
+</html>
