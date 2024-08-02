@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            position: relative;
+            margin: auto;
+        }
+
+        .image {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            height: 690px;
+            vertical-align: middle;
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="image">
+
+            <img src="Images/frames-for-your-heart-2d4lAQAlbDA-unsplash (1).jpg" alt="" id="images">
+
+        </div>
+
+        <div class="image">
+
+            <img src="Images/r-architecture-2gDwlIim3Uw-unsplash (2).jpg" alt="">
+
+        </div>
+
+        <div class="image">
+
+            <img src="Images/stephan-bechert-yFV39g6AZ5o-unsplash.jpg" alt="">
+
+        </div>
+
+        <div class="image">
+
+            <img src="Images/vita-vilcina-KtOid0FLjqU-unsplash (1).jpg" alt="">
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        let slideIndex = 0;
+        showSlides(); // call showslide method
+
+        function showSlides() {
+            let i;
+
+            // get the array of divs' with classname image-sliderfade
+            let slides = document.getElementsByClassName("image");
+
+            // get the array of divs' with classname dot
+            // let dots = document.getElementsByClassName("dot");
+
+            for (i = 0; i < slides.length; i++) {
+                // initially set the display to
+                // none for every image.
+                slides[i].style.display = "none";
+            }
+
+            // increase by 1, Global variable
+            slideIndex++;
+
+            // check for boundary
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            // for (i = 0; i < dots.length; i++) {
+            //     dots[i].className = dots[i].className.replace(" active", "");
+            // }
+
+            slides[slideIndex - 1].style.display = "block";
+            // dots[slideIndex - 1].className += " active";
+
+            // Change image every 2 seconds
+            setTimeout(showSlides, 2000);
+        }
+
+    </script>
+</body>
+
+</html>
