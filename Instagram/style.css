@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.image_box {
+    position: relative;
+    margin-left: 35%;
+    margin-top: 32px;
+}
+
+.image {
+    height: 540px;
+    width: 260px;
+    position: absolute;
+    left: 150px;
+    top: 23px;
+}
+
+.image_one {
+    height: 251px;
+    width: 260px;
+    position: absolute;
+    left: 150px;
+    top: 191px;
+    object-fit: cover;
+}
+
+i {
+    position: absolute;
+    font-size: 48px;
+    left: 255px;
+    top: 300px;
+    opacity: 0;
+    transform: translate(-50% -50%) scale(0);
+    transition: all ease 0.5s;
+}
