@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="game_count_container">
+            <p class="win">Win : <span id="win">0</span></p>
+            <p class="lose">Lose : <span id="lose">0</span></p>
+        </div>
+        <h1>Guess Number</h1>
+        <form>
+            <div class="form-group">
+                <input type="text" id="number" placeholder="Enter number in between 1 to 30" required>
+            </div>
+            <div class="label_container">
+                <label for="">Guessed Number is : <span id="guess_number"></span></label>
+                <label for="">Number of Guesses Left : <span id="guess_left">10</span></label>
+            </div>
+            <div class="btn_container">
+                <button type="submit" id="submit">Check</button>
+                <button type="submit" id="restart">Restart</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
