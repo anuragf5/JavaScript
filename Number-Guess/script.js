@@ -46,7 +46,6 @@ function startGame(playGame) {
 function gameWinLose() {
   if (userInput.value == randomNumber) {
     alert("Congratulation! you win");
-    win.innerHTML += 1;
     resetValues();
   } else if (userInput.value != randomNumber) {
     setValues();
@@ -60,7 +59,6 @@ function setValues() {
   }
   guessNumber.innerHTML += `${userInput.value} `;
   guessLeft.innerHTML = `${--leftGuessed}`;
-  lose.innerHTML += 1;
 }
 
 function resetValues() {
