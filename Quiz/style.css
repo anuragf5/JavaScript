@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: beige;
+}
+
+header {
+    background-color: rgb(15 23 42/1);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.header_outer_container {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    background-color: white;
+    padding: 4px;
+    border-radius: 4px;
+    margin-right: 16px;
+}
+
+.menu {
+    color: rgb(156 163 175 / 1);
+    margin-right: 16px;
+    font-size: 16px;
+}
+
+.menu:hover {
+    color: white;
+}
+
+.header_container a {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    color: rgb(156 163 175 / 1);
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+.header_container a:hover {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    color: white;
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+.auth_button_container .login {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    color: rgb(156 163 175 / 1);
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+.auth_button_container .login:hover {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    color: white;
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+.auth_button_container .signup {
+    font-weight: 500;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    color: white;
+    background-color: #1d4ed8;
+    text-decoration: none;
+    padding: 4px 16px 4px 16px;
+    border-radius: 100rem;
+}
+
+.heading_background_container {
+    background-color: rgb(255 255 255/1);
+    height: 18vh;
+    padding: 24px;
+}
+
+.heading_container {
+    width: 50%;
+    margin: auto;
+}
+
+.heading {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: .5rem;
+    font-weight: 700;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+}
+
+.subheading {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: rgb(107 114 128/1);
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+}
+
+.background_container {
+    background-color: rgb(243 244 246/1);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    height: 72vh;
+}
+
+.question_collection_container {
+    width: 50%;
+    margin: auto;
+}
+
+.container_one {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.html_container {
+    width: 100%;
+    background-color: rgb(255 255 255/1);
+    border: 1px solid rgb(229 231 235/1);
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    font-weight: 500;
+    margin-right: 8px;
+    padding: 16px;
+}
+
+.html_container:hover {
+    width: 100%;
+    background-color: rgb(255 255 255/1);
+    border: 1px solid gray;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    font-weight: 500;
+    margin-right: 8px;
+    padding: 16px;
+}
+
+.html,
+.css,
+.js,
+.react,
+.nodejs,
+.backend {
+    margin-bottom: 4px;
+}
+
+.css_container {
+    width: 100%;
+    background-color: rgb(255 255 255/1);
+    border: 1px solid rgb(229 231 235/1);
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    font-weight: 500;
+    padding: 16px;
+}
+
+.css_container:hover {
+    width: 100%;
+    background-color: rgb(255 255 255/1);
+    border: 1px solid gray;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    font-weight: 500;
+    padding: 16px;
+}
+
+.container_two {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.js_container {
+    width: 100%;
+    background-color: rgb(255 255 255/1);
+    border: 1px solid rgb(229 231 235/1);
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    font-weight: 500;
+    margin-right: 8px;
+    padding: 16px;
+}
+
+.js_container:hover {
+    width: 100%;
+    background-color: rgb(255 255 255/1);
+    border: 1px solid gray;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    font-weight: 500;
+    margin-right: 8px;
+    padding: 16px;
+}
+
+.react_container {
+    width: 100%;
+    background-color: rgb(255 255 255/1);
+    border: 1px solid rgb(229 231 235/1);
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    font-weight: 500;
+    padding: 16px;
+}
+
+.react_container:hover {
+    width: 100%;
+    background-color: rgb(255 255 255/1);
+    border: 1px solid gray;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    font-weight: 500;
+    padding: 16px;
+}
+
+.container_three {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.nodejs_container {
+    width: 100%;
+    background-color: rgb(255 255 255/1);
+    border: 1px solid rgb(229 231 235/1);
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    font-weight: 500;
+    margin-right: 8px;
+    padding: 16px;
+}
+
+.nodejs_container:hover {
+    width: 100%;
+    background-color: rgb(255 255 255/1);
+    border: 1px solid gray;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    font-weight: 500;
+    margin-right: 8px;
+    padding: 16px;
+}
+
+.backend_container {
+    width: 100%;
+    background-color: rgb(255 255 255/1);
+    border: 1px solid rgb(229 231 235/1);
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    font-weight: 500;
+    padding: 16px;
+}
+
+.backend_container:hover {
+    width: 100%;
+    background-color: rgb(255 255 255/1);
+    border: 1px solid gray;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    font-weight: 500;
+    padding: 16px;
+}
+
+.questions {
+    color: gray;
+    font-size: 14px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    font-weight: 400;
+}
+
+.topics {
+    color: gray;
+    font-size: 14px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    font-weight: 400;
+}
+
+.html_inner_container,
+.css_inner_container,
+.js_inner_container,
+.react_inner_container,
+.nodejs_inner_container,
+.backend_inner_container {
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    height: 4px;
+    width: 4px;
+    background-color: gray;
+    border-radius: 100%;
+    margin-left: 8px;
+    margin-right: 8px;
+}
