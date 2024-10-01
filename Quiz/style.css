@@ -320,3 +320,327 @@ header {
     margin-left: 8px;
     margin-right: 8px;
 }
+
+/*                */
+/* QUESTION PAGE */
+/*              */
+
+.all_questions_container {
+    height: 100vh;
+}
+
+main {
+    text-align: center;
+}
+
+.topic_heading_container {
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    line-height: 1;
+    margin-bottom: 1.25rem;
+    margin-top: 32px;
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    color: rgb(107 114 128/1);
+}
+
+.question_number_container {
+    border: 1px solid #e5e7ebcc;
+    padding: 18px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    background-color: #FFF;
+}
+
+.question_range_container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.question_range_container input {
+    width: 80%;
+}
+
+.question_range_container .left {
+    margin-left: 16px;
+    margin-right: 8px;
+}
+
+.question_range_container .right {
+    margin-left: 8px;
+}
+
+.ques_number_container {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.ques_number_container p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    color: rgb(107 114 128/1);
+}
+
+.ques_number_container svg {
+    height: 1.5rem;
+    color: gray;
+}
+
+.ques_number_container svg:hover {
+    color: #000;
+}
+
+.question_measure_container {
+    display: flex;
+    align-items: center;
+}
+
+.knew_container,
+.learn_container,
+.skip_container,
+.reset_container {
+    display: flex;
+    align-items: center;
+}
+
+.knew_container svg {
+    height: 1.2rem;
+    margin-right: 8px;
+}
+
+.knew_container .knew {
+    margin-right: 8px;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    color: #000;
+}
+
+.knew_container .knew_items {
+    margin-right: 16px;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    color: #000;
+    padding: 1px 6px 1px 6px;
+    border-radius: 8px;
+    background-color: #e5e7ebcc;
+}
+
+.learn_container svg {
+    height: 1.2rem;
+    margin-right: 8px;
+}
+
+.learn_container .learnt {
+    margin-right: 8px;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    color: #000;
+}
+
+.learn_container .learnt_items {
+    margin-right: 16px;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    color: #000;
+    padding: 1px 6px 1px 6px;
+    border-radius: 8px;
+    background-color: #e5e7ebcc;
+}
+
+.skip_container svg {
+    height: 1.2rem;
+    margin-right: 8px;
+}
+
+.skip_container .skipped {
+    margin-right: 8px;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    color: #000;
+}
+
+.skip_container .skipped_items {
+    margin-right: 16px;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    color: #000;
+    padding: 1px 6px 1px 6px;
+    border-radius: 8px;
+    background-color: #e5e7ebcc;
+}
+
+.reset_container svg {
+    height: 1.2rem;
+    margin-right: 8px;
+    color: #FF0000;
+}
+
+.reset_container .reset {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    color: #FF0000;
+}
+
+.reset_container:hover{
+    cursor: default;
+}
+
+.question_container {
+    border: 1px solid #e5e7ebcc;
+    padding: 18px 0px 18px 0px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    background-color: #FFF;
+}
+
+.question_container .circle_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.question_container .circle_container p {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+}
+
+.question_container .circle_container .circle {
+    height: 4px;
+    width: 4px;
+    background-color: gray;
+    border-radius: 100%;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.question_container h2 {
+    padding: 24px 0px 24px 0px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    text-align: center;
+}
+
+.question_container .answer {
+    text-decoration: underline;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    color: gray;
+    text-underline-offset: 4px;
+    text-align: center;
+
+}
+
+.question_container .answer:hover {
+    color: #000;
+}
+
+.bottom_container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
+
+.already_know_container,
+.did_not_know_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #e5e7ebcc;
+    padding: 8px;
+    border-radius: 6px;
+    color: gray;
+}
+
+.skip_question_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #FF0000;
+    padding: 8px;
+    border-radius: 6px;
+    color: #FF0000;
+}
+
+.already_know_container,
+.did_not_know_container {
+    margin-right: 8px;
+}
+
+.already_know_container svg {
+    height: 1.2rem;
+    /* margin-left: 16px; */
+    margin-right: 8px;
+}
+
+.already_know_container p {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+}
+
+.already_know_container:hover {
+    background-color: #000;
+    color: white;
+}
+
+.already_know_container:hover p {
+    color: white;
+}
+
+.did_not_know_container svg {
+    height: 1.2rem;
+    /* margin-left: 16px; */
+    margin-right: 8px;
+}
+
+.did_not_know_container p {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+}
+
+.did_not_know_container:hover {
+    background-color: #000;
+    color: white;
+}
+
+.did_not_know_container:hover p {
+    color: white;
+}
+
+.skip_question_container svg {
+    height: 1.2rem;
+    /* margin-left: 16px; */
+    margin-right: 8px;
+}
+
+.skip_question_container p {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    color: #FF0000;
+}
+
+.skip_question_container:hover {
+    background-color: #FF0000;
+    color: white;
+}
+
+.skip_question_container:hover p {
+    color: white;
+}
