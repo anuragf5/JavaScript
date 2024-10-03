@@ -7,7 +7,6 @@
 .container {
     height: 100vh;
     width: 100%;
-    background-color: beige;
 }
 
 header {
@@ -325,7 +324,7 @@ header {
 /* QUESTION PAGE */
 /*              */
 
-.all_questions_container {
+.all_questions_container{
     height: 100vh;
 }
 
@@ -500,10 +499,6 @@ p {
     line-height: 1.75rem;
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
     color: #FF0000;
-}
-
-.reset_container:hover{
-    cursor: default;
 }
 
 .question_container {
