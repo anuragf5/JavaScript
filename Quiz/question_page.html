@@ -111,7 +111,7 @@
                     <div class="circle"></div>
                     <p>Beginner</p>
                 </div>
-                <h2>What is JavaScript?</h2>
+                <h2 id="display_questions"></h2>
                 <p class="answer">Click to Reveal the Answer</p>
             </div>
 
@@ -172,11 +172,34 @@
     const skipButton = document.getElementById("skip_button");
     const skippedValue = document.getElementById("skipped_value");
     const range = document.getElementById("range");
+    const questions_display = document.getElementById("display_questions");
 
     let questionValue = 0;
     let knewItems = 0;
     let learnItems = 0;
     let skippedItems = 0;
+    let current_question_index = 0;
+
+    let questions = [
+        "What is JavaScript?",
+        "What are Data Types in JavaScript?",
+        "Which symbol is used for comments in JavaScript?",
+        "What is the use of the isNaN function?",
+        "Which is faster in JavaScript and ASP script?",
+        "What is negative infinity?",
+        "Is it possible to break JavaScript Code into several lines?",
+        "Which company developed JavaScript?",
+        "What are undeclared and undefined variables?",
+        "What do you mean by NULL in JavaScript?",
+        "What are Scopes in JavaScript?",
+    ];
+
+    function updateQuestionDisplay() {
+        questions_display.innerText = `Question ${current_question_index}: ${questions[current_question_index]}`;
+    }
+
+    // Initialize display with the first question
+    updateQuestionDisplay();
 
     leftButtton.onclick = function () {
         if (questionValue != 0) {
@@ -195,6 +218,11 @@
             }
 
             range.stepDown(10);
+
+            // questions_display.innerText = questions[--current_question_index];
+            current_question_index = Math.max(current_question_index - 1, 0); // Prevent index from going below 0
+            // questions_display.innerText = questions[current_question_index];
+            updateQuestionDisplay();
         }
     }
 
@@ -203,6 +231,10 @@
             questionIncreasing.innerHTML = questionValue += 1;
             skippedValue.innerHTML = skippedItems += 1;
             range.stepUp(10);
+            // questions_display.innerText = questions[current_question_index++];
+            current_question_index = Math.min(current_question_index + 1, questions.length - 1); // Prevent index from going beyond array length
+            // questions_display.innerText = questions[current_question_index];
+            updateQuestionDisplay();
         }
     }
 
